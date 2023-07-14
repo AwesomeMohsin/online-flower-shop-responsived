@@ -170,7 +170,9 @@ body {
 }
 
 .hot-deal-description {
-    width: 594px;
+    
+    width: 65%;
+    margin: 0 auto; 
     color: rgba(39, 39, 39, 0.60);
     font-size: 18px;
     font-weight: 400;
@@ -438,6 +440,15 @@ body {
 /* Smaller Devices */
 
 @media screen and (max-width:576px) {
+    .hot-deal-content{
+        margin: 0 auto;
+    }
+    .hot-deal-description{
+        
+    }
+    .hot-deal-image{
+        display: none;
+    }
 
     .instagram-description{
         width: 70%;
@@ -471,6 +482,12 @@ body {
 /* Medium Devices */
 
 @media screen and (min-width:576px) and (max-width:992px) {
+
+    .hot-deal-content {
+        padding-bottom: 150px;
+        
+        margin: 0 auto;
+    }
 
     .instagram-photos img {
         width: 40%; 
