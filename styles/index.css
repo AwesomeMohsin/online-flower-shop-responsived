@@ -254,14 +254,20 @@ body {
 
 }
 
+.parent-review-banner {
+    width: 50%;
+}
+
 .review-banner {
     background-image: url('../images/bg-9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 745px;
-    width: 50%;
+    height: 768px;
+    width: 100%;
 
 
 }
@@ -470,6 +476,7 @@ body {
 
     .banner-description {
         margin: 0 auto;
+        margin-bottom: 30px;
         width: 90%;
     }
 
@@ -537,7 +544,7 @@ body {
 
     .hot-deal-content {
         margin: 0 auto;
-        width: 60%;
+        width: 90%;
         padding-bottom: 30px;
     }
 
@@ -691,9 +698,9 @@ body {
 
 /* Larger Devices */
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:992px) and (max-width:1400px) {
 
-    /* .header {
+    .header {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -701,23 +708,25 @@ body {
     }
 
     .banner-content {
-        
-        
+
+
         text-align: left;
     }
+
     .banner-title {
-        
+
         margin-top: 60px;
         width: 80%;
-        font-size: 80px;
+        font-size: 70px;
     }
+
     .banner-description {
-        
+
         width: 70%;
     }
-    .btn-shop{
-        
-    } */
+
+    .btn-shop {}
+
     .banner-image {
         margin: 0 auto;
         justify-content: center;
