@@ -58,6 +58,10 @@ body {
 }
 
 /* Featured Flower style section */
+.featured-flower-section {
+    display: flex;
+    justify-content: center;
+}
 
 .featured-container {
     text-align: center;
@@ -170,9 +174,9 @@ body {
 }
 
 .hot-deal-description {
-    
+
     width: 65%;
-    margin: 0 auto; 
+    margin: 0 auto;
     color: rgba(39, 39, 39, 0.60);
     font-size: 18px;
     font-weight: 400;
@@ -323,7 +327,7 @@ body {
     display: flex;
 }
 
-.instagram-photos{
+.instagram-photos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -440,21 +444,64 @@ body {
 /* Smaller Devices */
 
 @media screen and (max-width:576px) {
-    .hot-deal-content{
+    .featured-flower-title {
+        font-size: 35px;
+    }
+
+    .featured-description {
+        width: 70%;
         margin: 0 auto;
     }
-    .hot-deal-description{
+    .flower-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+.flowers h3{
+    margin-bottom: 50px;
+}
+    #featured-flowers-1{
+        width: 70%;
         
     }
-    .hot-deal-image{
+    #featured-flowers-1 img {
+        width: 60%;
+        padding: 110px 0px 0px 0px;
+    
+    }
+    #featured-flowers-2{
+        width: 70%;
+    }
+    #featured-flowers-2 img {
+        width: 60%;
+        padding: 160px 10px 0 10px;
+    
+    }
+    #featured-flowers-3{
+        width: 70%;
+    }
+    #featured-flowers-3 img {
+        width: 60%;
+        padding: 110px 10px 0 10px;
+    
+    }
+  
+    .hot-deal-content {
+        margin: 0 auto;
+        width: 60%;
+        padding-bottom: 30px;
+    }
+
+    .hot-deal-image {
         display: none;
     }
 
-    .instagram-description{
+    .instagram-description {
         width: 70%;
     }
+
     .instagram-photos img {
-        width: 40%; 
+        width: 40%;
     }
 
     .latest-deals-content {
@@ -462,16 +509,17 @@ body {
         height: 100%;
     }
 
-    .subscribe-content input{
-        
+    .subscribe-content input {
+
         width: 70%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     .btn-subscribe {
         margin-bottom: 10px;
     }
-    
+
     .footer-description {
         width: 75%;
         margin: 0 auto;
@@ -482,23 +530,30 @@ body {
 /* Medium Devices */
 
 @media screen and (min-width:576px) and (max-width:992px) {
+    .flower-container {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
 
+    }
     .hot-deal-content {
         padding-bottom: 150px;
-        
+
         margin: 0 auto;
     }
 
     .instagram-photos img {
-        width: 40%; 
+        width: 40%;
     }
+
     .latest-deals-content {
         width: 100%;
     }
-    .subscribe-content input{
+
+    .subscribe-content input {
         width: 70%;
     }
-   
+
 
 
 }
