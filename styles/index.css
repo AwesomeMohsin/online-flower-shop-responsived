@@ -321,6 +321,12 @@ body {
     display: flex;
 }
 
+.instagram-photos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .instagram-photos img {
     padding: 10px;
 }
@@ -433,6 +439,13 @@ body {
 
 @media screen and (max-width:576px) {
 
+    .instagram-description{
+        width: 70%;
+    }
+    .instagram-photos img {
+        width: 40%; 
+    }
+
     .latest-deals-content {
         width: 100%;
         height: 100%;
@@ -458,6 +471,10 @@ body {
 /* Medium Devices */
 
 @media screen and (min-width:576px) and (max-width:992px) {
+
+    .instagram-photos img {
+        width: 40%; 
+    }
     .latest-deals-content {
         width: 100%;
     }
