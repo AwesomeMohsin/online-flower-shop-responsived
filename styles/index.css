@@ -11,18 +11,21 @@ body {
 .header {
     background: rgba(229, 84, 115, 0.10);
     height: 850px;
+    width: auto;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    
 }
 
 .banner-content {
+    margin-left: 127px;
     padding-bottom: 150px;
 }
 
 .banner-title {
+    
     color: #272727;
-
     width: 708px;
     font-size: 80px;
     font-weight: 800;
@@ -32,6 +35,7 @@ body {
 }
 
 .banner-description {
+    
     width: 634px;
     color: rgba(39, 39, 39, 0.60);
     font-size: 18px;
@@ -444,6 +448,42 @@ body {
 /* Smaller Devices */
 
 @media screen and (max-width:576px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner-content {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner-title {
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .banner-description {
+        width: 90%;
+    }
+
+    .btn-shop {
+        margin-bottom: 50px;
+    }
+
+    .banner-image {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+
+    }
+
     .featured-flower-title {
         font-size: 35px;
     }
@@ -452,40 +492,48 @@ body {
         width: 70%;
         margin: 0 auto;
     }
+
     .flower-container {
         flex-direction: column;
         align-items: center;
 
     }
-.flowers h3{
-    margin-bottom: 50px;
-}
-    #featured-flowers-1{
-        width: 70%;
-        
+
+    .flowers h3 {
+        margin-bottom: 50px;
     }
+
+    #featured-flowers-1 {
+        width: 70%;
+
+    }
+
     #featured-flowers-1 img {
         width: 60%;
         padding: 110px 0px 0px 0px;
-    
+
     }
-    #featured-flowers-2{
+
+    #featured-flowers-2 {
         width: 70%;
     }
+
     #featured-flowers-2 img {
         width: 60%;
         padding: 160px 10px 0 10px;
-    
+
     }
-    #featured-flowers-3{
+
+    #featured-flowers-3 {
         width: 70%;
     }
+
     #featured-flowers-3 img {
         width: 60%;
         padding: 110px 10px 0 10px;
-    
+
     }
-  
+
     .hot-deal-content {
         margin: 0 auto;
         width: 60%;
@@ -530,12 +578,51 @@ body {
 /* Medium Devices */
 
 @media screen and (min-width:576px) and (max-width:992px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner-content {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner-title {
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        width: 80%;
+        font-size: 60px;
+    }
+
+    .banner-description {
+        width: 90%;
+    }
+
+    .btn-shop {
+        margin-bottom: 50px;
+    }
+
+    .banner-image {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+    }
+    
+
     .flower-container {
         flex-direction: column;
         gap: 50px;
         align-items: center;
 
     }
+
     .hot-deal-content {
         padding-bottom: 150px;
 
@@ -554,6 +641,49 @@ body {
         width: 70%;
     }
 
+}
 
+/* Larger Devices */
 
+@media screen and (min-width:992px) {
+
+    /* .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .banner-content {
+        
+        
+        text-align: left;
+    }
+    .banner-title {
+        
+        margin-top: 60px;
+        width: 80%;
+        font-size: 80px;
+    }
+    .banner-description {
+        
+        width: 70%;
+    }
+    .btn-shop{
+        
+    } */
+    .banner-image {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+    
+    
+    .flower-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
 }
