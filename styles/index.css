@@ -436,7 +436,6 @@ body {
     .latest-deals-content {
         width: 100%;
         height: 100%;
-        align-items: center;
     }
 
     .subscribe-content input{
@@ -459,7 +458,13 @@ body {
 /* Medium Devices */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-
+    .latest-deals-content {
+        width: 100%;
+    }
+    .subscribe-content input{
+        width: 70%;
+    }
+   
 
 
 }
